@@ -4,6 +4,9 @@ let compScore = 0;
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 
+const userScorePara = document.querySelector("#user-score");
+const compScorePara = document.querySelector("#comp-score");
+
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissor"];
     const randomIdx = Math.floor(Math.random() * 3);
@@ -11,27 +14,26 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    console.log("game was draw");
     msg.innerText = "Game was Draw";
     msg.style.backgroundColor = "grey";
 };
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin){
-        console.log("you win");
-        msg.innerText = "You Win";
+        userScore++;
+        userScorePara.innerText = userScore;
+        msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     } else {
-        console.log("you lose");
-        msg.innerText = "You Lose";
+        compScore++;
+        compScorePara.innerText = compScore;
+        msg.innerText = `You lost! ${compChoice} beats your ${userChoice}`;;
         msg.style.backgroundColor = "red";
     }
 };
 
 const playGame = (userChoice) => {
-    console.log("user Choice = ", userChoice);
     const compChoice = genCompChoice();
-    console.log("comp Choice = ", compChoice);
 
     if ( userChoice === compChoice ){
         drawGame();
@@ -47,7 +49,7 @@ const playGame = (userChoice) => {
             //rock, paper
             userWin = compChoice === "rock" ? false : true ;
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, compChoice);
     }
 };
 
