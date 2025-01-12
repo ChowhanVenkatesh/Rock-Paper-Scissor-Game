@@ -1,12 +1,12 @@
-#Rock Paper Scissors Game 🎮✂️📄🪨
+Rock Paper Scissors Game 🎮✂️📄🪨
 
 A simple Rock Paper Scissors game built with JavaScript that lets you play against the computer! This project demonstrates basic programming concepts such as conditional statements, randomization, and user interaction.
 
-Features
+<h2>Features</h2>
 
 Play the classic Rock Paper Scissors game. User-friendly interface for interaction. Randomized computer choices for fair gameplay. Score tracking for competitive fun.
 
-How to Play
+<h2>How to Play</h2>
 
 Clone this repository to your local machine: bash
 
@@ -20,7 +20,7 @@ Choose your move: Rock 🪨, Paper 📄, or Scissors ✂️.
 
 The computer will make its move. The game will determine the winner and display the results.
 
-Installation
+<h2> Installation </h2>
 
 No installation is required! This project runs directly in your web browser.
 
@@ -34,7 +34,7 @@ git clone https://github.com/ChowhanVenkatesh/Rock-Paper-Scissor-Game.git
 
 Navigate to the project folder and open the index.html file.
 
-Technologies Used
+<h2> Technologies Used </h2>
 
 HTML: Markup for the structure.
 
@@ -42,7 +42,7 @@ CSS: Styling for a visually appealing interface.
 
 JavaScript: The core logic for the game.
 
-Game Logic
+<h2> Game Logic </h2>
 
 User selects one of three options: Rock, Paper, or Scissors.
 
@@ -58,7 +58,7 @@ If both choose the same option, it's a tie. Screenshots
 
 Screenshot of the game in action.
 
-Contribution
+<h2> Contribution </h2>
 
 Contributions are welcome! If you'd like to enhance this project:
 
@@ -71,5 +71,7 @@ Commit your changes (git commit -m 'Add YourFeature').
 Push to the branch (git push origin feature/YourFeature).
 
 Open a Pull Request.
+
+<h2> Demo</h2>
 
 https://miniprojectgame.ccbp.tech/
